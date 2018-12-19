@@ -1,0 +1,29 @@
+.header {
+    height: 95vh;
+    background-image:linear-gradient(to right bottom, rgba($color-secondary, 0.8),rgba($color-primary, 0.8)) , url(../img/brock.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    position: relative; /* sets position since the header is the parent of the logo box */
+    &__logo-box {
+        position: absolute; /* enables use of top, left, etc. */
+        top: 4rem;
+        left: 4rem;
+    }
+    &__logo {
+        height: 3.5rem;
+    }
+    &__logo:hover {
+        animation: spin 1s linear 1;
+        backface-visibility: hidden; /* hides that subtle tweak after an animation */
+        cursor: pointer;
+    }
+    
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
