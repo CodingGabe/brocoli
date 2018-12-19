@@ -1,0 +1,29 @@
+.row {
+    display: flex;
+    max-width: $grid-width;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    &:not(:last-child) {
+        margin-bottom: $gutter-vertical;
+    }
+
+    /* All attributes that start with col */
+    [class^="col-"] {
+        background-color: $color-secondary;
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+        }
+    }
+
+    .col-3 {
+        flex: 3;
+    }
+    .col-4 {
+        flex: 4;
+    }
+    .col-5 {
+        flex: 5;
+    }
+}

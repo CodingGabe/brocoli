@@ -87,6 +87,27 @@ body {
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-in-out; }
 
+.heading-secondary {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  background-image: linear-gradient(to right, #FA198B, #000000);
+  display: inline-block;
+  -webkit-background-clip: text;
+  /* Crazy clipping of background */
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all .2s; }
+  .heading-secondary:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-8 {
+  margin-bottom: 8rem; }
+
 /* Buttons */
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -159,3 +180,29 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.row {
+  display: flex;
+  max-width: 114rem;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  /* All attributes that start with col */ }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row [class^="col-"] {
+    background-color: #14B6CC; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-3 {
+    flex: 3; }
+  .row .col-4 {
+    flex: 4; }
+  .row .col-5 {
+    flex: 5; }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -15vh; }
