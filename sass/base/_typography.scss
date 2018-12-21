@@ -51,12 +51,12 @@ body {
 }
 
 .sub-heading {
-    font-size: 1.6rem;
+    font-size: $body-font-size;
     font-weight: $bold;
     text-transform: uppercase;
 }
 .paragraph {
-    font-size: 1.6rem;
+    font-size: $body-font-size;
     &:not(:last-child) {
         margin-bottom: 2rem;
     }
