@@ -3,6 +3,7 @@
     background-image:linear-gradient(to right bottom, rgba($color-secondary, 0.8),rgba($color-primary, 0.8)) , url(../img/brock.jpg);
     background-size: cover;
     background-position: top;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
     position: relative; /* sets position since the header is the parent of the logo box */
     &__logo-box {
